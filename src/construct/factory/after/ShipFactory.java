@@ -12,6 +12,8 @@ public interface ShipFactory {
 
     Ship createShip();
 
+    void sendEmailTo(String email, Ship ship);
+
     // jdk 9
     // 이전버전이면 추상 클래스 사용해야 함
     private void validate(String name, String email) {
@@ -27,7 +29,7 @@ public interface ShipFactory {
         System.out.println(name + " prepare!");
     }
 
-    private void sendEmailTo(String email, Ship ship) {
-        System.out.println(ship.getName() + " was done.");
-    }
+//    private void sendEmailTo(String email, Ship ship) {
+//        System.out.println(ship.getName() + " was done.");
+//    }
 }

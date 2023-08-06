@@ -1,9 +1,15 @@
 package construct.factory.after;
 
+import construct.abfactory.after.Anchor;
+import construct.abfactory.after.Wheel;
+
 public class Ship {
     private String name;
     private String color;
     private String logo;
+
+    private Wheel wheel;
+    private Anchor anchor;
 
     public String getName() {
         return name;
@@ -29,6 +35,22 @@ public class Ship {
         this.logo = logo;
     }
 
+    public Wheel getWheel() {
+        return wheel;
+    }
+
+    public void setWheel(Wheel wheel) {
+        this.wheel = wheel;
+    }
+
+    public Anchor getAnchor() {
+        return anchor;
+    }
+
+    public void setAnchor(Anchor anchor) {
+        this.anchor = anchor;
+    }
+
     @Override
     public String toString() {
         return "Ship{" +
@@ -37,4 +59,5 @@ public class Ship {
                 ", logo='" + logo + '\'' +
                 '}';
     }
+
 }
